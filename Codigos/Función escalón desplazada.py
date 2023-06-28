@@ -21,14 +21,14 @@ y1 = step_function(x)
 y2 = step_function(x - 0.5)
 fig, ax = plt.subplots(figsize=(10, 6))
 # Graficar ambas funciones en el mismo plot
-plt.plot(x, y1, color='blue', label='Función Escalón')
-plt.plot(x, y2, color='red', label='Función Escalón con bias')
+#plt.plot(x, y1, color='blue', label='sin bias')
+plt.plot(x, y2, color='red') #label='con bias')
 
 # Agregar títulos y leyendas
-plt.title('Gráfico de Funciones Escalón', fontweight='bold')
-plt.xlabel('x', fontweight='bold')
-plt.ylabel('step(x)', fontweight='bold')
+plt.title('Gráfico de los valores de salida', fontweight='bold')
+plt.xlabel('w*x', fontweight='bold')
+plt.ylabel('Magnitud', fontweight='bold')
 plt.legend()
-
+ax.grid(True)
 # Mostrar el gráfico
 plt.show()
